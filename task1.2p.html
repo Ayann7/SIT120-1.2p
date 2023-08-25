@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: burlywood;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div>
+  <h1>This is a sample HTML page</h1>
+  <h3>Done by Ayan Mohammad</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem">Homepage</div>
+    <div class="menuitem">Inquiries</div>
+    <div class="menuitem">Contact US</div>
+  </div>
+
+  <div class="main">
+    <h2>A Kangaroo</h2>
+    
+    <img src="Kangaroo.webp" style="width:100%">
+  </div>
+
+  <div class="right">
+    <h2>What is a kangaroo?</h2>
+    <p>Kangaroos are four marsupials from the family Macropodidae. In common use the term is used to describe the largest species from this family, the red kangaroo, as well as the antilopine kangaroo, eastern grey kangaroo, and western grey kangaroo.</p>
+    <h2>Where can you find kangaroos?</h2>
+    <p>Traditionally, kangaroos inhabit bushlands and woods. However, with the existence of man they have presently adapted to other habitats. These habitats include forests, coastal heatland, grasslands, and forests.</p>
+</div>
+
+
+
+</body>
+</html>

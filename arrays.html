@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Question 3 - arrays</title>
+    </head>
+    <body>
+        <p>The pop() method removes the last element from an array.</p>
+        <p id="pop1"></p>
+        <p id="pop2"></p>  
+        
+        <p>The push() method appends a new element to an array:</p>
+        <p id="push1"></p>
+        <p id="push2"></p>
+
+        <p>The shift() method removes the first element of an array (and "shifts" the other elements to the left):</p>
+        <p id="shift1"></p>
+        <p id="shift2"></p>
+
+        <p>The concat() method merges (concatenates) arrays:</p>
+        <p id="con"></p>
+
+        <p>The length property provides an easy way to append new elements to an array without using the push() method:</p>
+        <p id="len1"></p>
+        <p id="len2"></p>
+    
+
+        <script>
+            const cars = ["Toyota", "Mercedes", "BMW", "Mazda"];
+            document.getElementById("pop1").innerHTML = cars;
+            cars.pop();
+            document.getElementById("pop2").innerHTML = cars;
+
+            const companies = ["Nestle", "Pringles", "Smiths",];
+            document.getElementById("push1").innerHTML = companies;
+            companies.push("Samsung");
+            document.getElementById("push2").innerHTML = companies;
+
+            const names = ["Banana", "Orange", "Apple"];
+            document.getElementById("shift1").innerHTML = names;
+            names.shift();
+            document.getElementById("shift2").innerHTML = names;
+
+            const techbrands = ["Apple", "Lenovo"];
+            const moretechbrands = ["Samsung", "OnePlus"];
+            const allbrands = techbrands.concat(moretechbrands);
+            document.getElementById("con").innerHTML = allbrands;
+
+            const people = ["Alice", "Bob", "Marley", "Nick"];
+            document.getElementById("len1").innerHTML = people;
+            people[people.length] = "Jack";
+            document.getElementById("len2").innerHTML = people;
+
+
+
+        </script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Question 2 - strings</title>
+    </head>
+    <body>
+
+        <h2>The length of the string is:</h2>
+        <p id="length"></p> 
+
+        <p id="demo"></p>
+
+        <p id="upper"></p>
+
+        <p id="lower"></p>
+
+        <p id="concat"></p>
+
+
+
+        <script>
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("length").innerHTML = text.length;
+
+        let sweet = "I am going to the supermarket"
+        sweet = sweet.replaceAll("supermarket","Airport");
+        document.getElementById("demo").innerHTML = sweet;
+
+        
+        let a = "this is uppercase";
+        a = a.toUpperCase()
+        document.getElementById("upper").innerHTML = a
+
+        let b = "THIS IS LOWERCASE";
+        b = b.toLowerCase()
+        document.getElementById("lower").innerHTML = b
+
+        let t1 = "SIT";
+        let t2 = "120";
+        let t3 = t1.concat(" ",t2);
+        document.getElementById("concat").innerHTML = t3;
+
+        </script>
+    </body>
+</html>
