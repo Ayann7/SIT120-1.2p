@@ -14,6 +14,9 @@
 
         <p>The toString() method converts a number to a string.</p> 
         <p id="n4"></p>
+
+        <p>The toExponential() method returns a string, with the number rounded and written using exponential notation.</p>
+        <p id="n5"></p>   
     <script>
         let x = 9.656;
         document.getElementById("n1").innerHTML =
@@ -34,12 +37,13 @@
         (123).toString() + "<br>" +
         (900 + 99).toString();
 
+        let number1 = 12.12;
+        document.getElementById("n5").innerHTML =
+        number1.toExponential() + "<br>" + 
+        number1.toExponential(4)
+
 
         
-
-
-
-
 
 
 
